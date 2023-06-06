@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem;
+}
+
+.nbar1 {
+    display: flex;
+}
+
+.nbar1 i {
+    background-image: linear-gradient(45deg, blue, red);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+.logo {
+    background-image: linear-gradient(45deg, blue, red);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2 ul {
+    display: flex;
+    padding-right: 1.1rem;
+}
+
+.logo2 ul li a {
+    text-decoration: none;
+    padding: 1.1rem;
+    font-weight: 600;
+}
+
+.logo2 ul li a:hover {
+    color: rgb(255, 120, 120);
+}
+
+.btt {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(248, 71, 52);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: .1s ease-in-out;
+}
+
+.btt:hover {
+    transform: scale(1.1);
+    background-color: blueviolet;
+}
+
+.switch {
+    display: none;
+}
+
+/* HEADER SECTION */
+
+.sframe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 1.1rem;
+    transition: .2s ease-in-out;
+}
+
+.sframe a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(248, 60, 60);
+    font-weight: 600;
+    background: linear-gradient(to left, rgb(247, 70, 50) 50%, blue 50%) right;
+    background-size: 210%;
+    transition: .2s ease-out;
+}
+
+.sframe a:hover,.btn:hover {
+    background-position: left;
+    transform: scale(1.1);
+}
+
+.texts {
+    margin: 20px;
+}
+
+.t1 {
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, rgb(255, 40, 40), rgb(195, 0, 255));
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.t2 {
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, red, rgb(225, 243, 64));
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.t3 {
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, purple, rgb(87, 7, 7));
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.t4 {
+    font-size: 2rem;
+    color: white;
+}
+
+.pic img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(27, 24, 24);
+}
+
+/* DROP MENU*/
+.logo4 {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: black;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    display: none;
+    overflow: hidden;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo4.open {
+    height: 50vh;
+}
+
+.logo4 a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.logo4 li {
+    list-style: none;
+    padding: 5px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.logo4 ul li a:hover {
+    color: rgb(255, 120, 120);
+}
+
+.logo4 .btt {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION */
+section {
+    height: 100vh;
+}
+
+section h1 {
+    text-align: center;
+    background-image: linear-gradient(45deg, blue, red);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section img {
+    height: 30rem;
+    width: 20rem;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(27, 24, 24);
+}
+
+
+.tech_pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+
+.tech_pic div {
+    color: white;
+}
+
+.xtraa {
+    display: flex;
+    transition: .1s ease;
+}
+
+.wrd1 {
+    position: absolute;
+    margin: 20rem 0 0 2rem;
+}
+
+.wrd2 {
+    position: absolute;
+    margin: 20rem 0 0 2rem;
+}
+
+.wrd1 h2, .wrd2 h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.wrd1 p, .wrd2 p {
+    padding-bottom: 1.5rem;
+}
+
+.wrd1 a, .wrd2 a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(228, 62, 62);
+    background: linear-gradient(to left, rgb(248, 71, 52) 50%, blue 50%) right;
+    background-size: 210%;
+    transition: .2s ease-out;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+}
+
+.wrd1 a:hover, .wrd2 a:hover {
+    background-position: left;
+}
+
+.xtraa:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer h2 {
+    padding-bottom: 1rem;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 1.3rem;
+}
+
+.contain_foot {
+    width: 70vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.foot1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.foot2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.foo3 {
+    display: flex;
+}
+
+.foo3 i {
+    padding: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.foot2 i {
+    font-size: 1.5rem;
+    padding: 0 0.4rem 0 0.4rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 700px) {
+    .texts {
+        margin-bottom: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nbar {
+        padding: 1.1rem;
+    }
+
+    .t1,.t2,.t3,.t4 {
+        font-size: 2rem;
+    }
+    .pic img {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo4 {
+        display: flex;
+        width: unset;
+        left: 2rem;
+    }
+    .logo2 {
+        display: none;
+    }
+    .switch {
+        display: block;
+    }
+    .sframe {
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .tech_pic {
+        display: flex;
+        flex-flow: column;
+        height: 170vh;
+    }
+    footer {
+        margin-top: 30rem;
+    }
+    .foot1 {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 2rem;
+    }
+    .foot2 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+}
+
+/* PAGE 2 */
+
+.sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.mid {
+    height: 90%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.mid img {
+    width: 100%;
+    height: 70vh;
+}
+
+.mid p {
+    font-size: 2rem;
+    background-image: linear-gradient(45deg, white, rgb(65, 61, 61));
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
